@@ -26,12 +26,313 @@ html {
       font-size: 75%; } }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.8rem; }
+
+p {
+  color: #9fabb2; }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/bg-header-desktop.png) no-repeat top center;
+  background-size: fit; }
+  @media (max-width: 600px) {
+    .hero-container {
+      background: url(/images/bg-header-mobile.png) no-repeat top center; } }
+
+.button-container {
+  margin-bottom: 15rem;
+  text-align: center; }
+
+.button {
+  padding: 2rem 5rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff; }
+  @media (max-width: 600px) {
+    .button {
+      width: 80%; } }
+  .button--ios {
+    background-color: #26baa4;
+    margin-right: 1rem; }
+    @media (max-width: 600px) {
+      .button--ios {
+        margin-bottom: 2.7rem; } }
+  .button--mac {
+    background-color: #6173ff; }
+    @media (max-width: 600px) {
+      .button--mac {
+        margin-bottom: 4rem; } }
+
+.logo {
+  width: 12rem;
+  margin-top: 20rem;
+  margin-bottom: 6rem; }
+  @media (max-width: 600px) {
+    .logo {
+      width: 13rem;
+      margin-top: 14rem;
+      margin-bottom: 7.5rem; } }
+
+.hero-headline {
+  font-size: 4.5rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .hero-headline {
+      width: 90%;
+      text-align: center;
+      font-size: 3.8rem;
+      margin-bottom: 1.2rem; } }
+
+.hero-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4.3rem;
+  line-height: 1.4;
+  font-size: 2rem; }
+  @media (max-width: 600px) {
+    .hero-text {
+      width: 90%;
+      line-height: 1.7;
+      margin-bottom: 5rem; } }
+
+.sub-headline {
+  font-size: 3.5rem;
+  margin-bottom: 1.7rem;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .sub-headline {
+      font-size: 3.1rem;
+      width: 90%; } }
+
+.sub-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin: auto;
+  margin-bottom: 8rem;
+  line-height: 1.7; }
+  @media (max-width: 600px) {
+    .sub-text {
+      width: 80%;
+      line-height: 1.6;
+      margin-bottom: 7.2rem; } }
+
+.split {
+  display: flex;
+  margin-bottom: 14rem; }
+  @media (max-width: 600px) {
+    .split {
+      display: block;
+      text-align: center; } }
+
+.left {
+  margin-left: -4rem;
+  flex: 51%; }
+  @media (max-width: 600px) {
+    .left {
+      margin: 0 auto;
+      width: 86%;
+      flex: none;
+      margin-bottom: 5.4rem; } }
+
+.right {
+  flex: 49%; }
+  @media (max-width: 600px) {
+    .right {
+      margin-bottom: 20rem; } }
+
+.right-container {
+  margin-top: 6rem;
+  margin-left: -9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.margin-less {
+  margin-bottom: 10rem; }
+  @media (max-width: 600px) {
+    .margin-less {
+      margin-bottom: 4rem; } }
+
+.margin-more {
+  margin-bottom: 7rem; }
+  @media (max-width: 600px) {
+    .margin-more {
+      margin-bottom: 9rem; } }
+
+.benefit-block {
+  width: 50%; }
+  .benefit-block:not(:last-child) {
+    margin-bottom: 6rem; }
+    @media (max-width: 600px) {
+      .benefit-block:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 600px) {
+    .benefit-block {
+      width: 80%; } }
+
+.benefit-block h2 {
+  font-size: 2.4rem; }
+  .benefit-block h2:not(:last-child) {
+    margin-bottom: 1rem; }
+
+.benefit-block p {
+  line-height: 1.6;
+  font-size: 1.6rem; }
+
+.image-device-container {
+  text-align: center;
+  margin-bottom: 5rem; }
+  @media (max-width: 600px) {
+    .image-device-container {
+      margin-bottom: 10.5rem; } }
+
+.image-device {
+  width: 65%; }
+  @media (max-width: 600px) {
+    .image-device {
+      width: 90%; } }
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem; }
+  @media (max-width: 600px) {
+    .row {
+      display: block;
+      margin-bottom: 14rem; } }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  padding: 0 20px; }
+  @media (max-width: 600px) {
+    .box {
+      width: 100%;
+      margin-bottom: 5.5rem; } }
+  .box:last-child .box-image {
+    height: 4rem;
+    width: 5.2rem; }
+
+.box-image {
+  width: 4.5rem;
+  margin-bottom: 4rem; }
+  @media (max-width: 600px) {
+    .box-image {
+      width: 5rem;
+      margin-bottom: 5rem; } }
+
+.box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .box h2 {
+      font-size: 2.6rem; } }
+
+.access {
+  margin-bottom: 2rem; }
+
+.box p {
+  width: 80%;
+  line-height: 1.7;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .box p {
+      width: 86%;
+      line-height: 1.7; } }
+
+.company-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 16rem;
+  width: 80%; }
+  @media (max-width: 600px) {
+    .company-row {
+      display: block;
+      text-align: center; } }
+
+@media (max-width: 600px) {
+  .company-box {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 7rem; }
+    .company-box:nth-child(2) {
+      width: 38%; }
+    .company-box:nth-child(4) {
+      width: 38%; }
+    .company-box:nth-child(5) {
+      width: 38%; } }
+
+.bottom-action {
+  margin-bottom: -1.5rem; }
+
+@media (max-width: 600px) {
+  .extra-margin {
+    margin-bottom: 15rem; } }
+
+.less-margin-2 {
+  margin-bottom: 6rem; }
+
+.footer-container {
+  background-color: #f8f7f7;
+  padding: 6rem 4rem; }
+
+.footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 600px) {
+    .footer {
+      display: block;
+      text-align: center; } }
+
+.footer-logo {
+  width: 6rem;
+  height: 6rem; }
+  @media (max-width: 600px) {
+    .footer-logo {
+      width: 6rem;
+      margin-bottom: 4.4rem; } }
+
+.footer-item {
+  margin-bottom: 2rem;
+  list-style: none;
+  color: #4c545d; }
+  @media (max-width: 600px) {
+    .footer-item {
+      font-size: 2.1rem;
+      margin-bottom: 2.8rem; } }
+
+.social {
+  margin-top: 6rem; }
 
 .attribution {
   font-size: 11px;
   text-align: center; }
+  @media (max-width: 600px) {
+    .attribution {
+      display: none; } }
 
 .attribution a {
   color: #3e52a3; }
+
+ion-icon {
+  font-size: 35px;
+  color: #4c545d;
+  margin-left: 1.5rem; }
+  ion-icon:not(:last-of-type) {
+    margin-left: 1.5rem; }
+  @media (max-width: 600px) {
+    ion-icon {
+      font-size: 30px; } }

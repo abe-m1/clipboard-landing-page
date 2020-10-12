@@ -19,6 +19,7 @@ $strongCyan: hsl(171, 66%, 44%);
 $lightBlue: hsl(233, 100%, 69%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayisBlue: hsl(201, 11%, 66%);
+$white: #fff;
 
 //mixins
 @mixin respond($breakpoint) {
@@ -61,14 +62,389 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.8rem;
 }
 
+p {
+  color: $grayisBlue;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/bg-header-desktop.png) no-repeat top center;
+  background-size: fit;
+  // @include respond(phone) {
+  //   width: 100%;
+  // }
+  @include respond(phone) {
+    background: url(/images/bg-header-mobile.png) no-repeat top center;
+  }
+}
+
+.button-container {
+  margin-bottom: 15rem;
+  text-align: center;
+}
+
+.button {
+  padding: 2rem 5rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.8rem;
+  color: $white;
+
+  @include respond(phone) {
+    width: 80%;
+  }
+
+  &--ios {
+    background-color: $strongCyan;
+    margin-right: 1rem;
+    @include respond(phone) {
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  &--mac {
+    background-color: $lightBlue;
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.logo {
+  width: 12rem;
+  margin-top: 20rem;
+  margin-bottom: 6rem;
+
+  @include respond(phone) {
+    width: 13rem;
+    margin-top: 14rem;
+    margin-bottom: 7.5rem;
+  }
+}
+
+.hero-headline {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+
+  @include respond(phone) {
+    width: 90%;
+    text-align: center;
+    font-size: 3.8rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.hero-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4.3rem;
+  line-height: 1.4;
+  font-size: 2rem;
+
+  @include respond(phone) {
+    width: 90%;
+    line-height: 1.7;
+    margin-bottom: 5rem;
+  }
+}
+
+.sub-headline {
+  font-size: 3.5rem;
+  margin-bottom: 1.7rem;
+  text-align: center;
+
+  @include respond(phone) {
+    font-size: 3.1rem;
+    width: 90%;
+  }
+}
+
+.sub-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 4rem;
+  margin: auto;
+  margin-bottom: 8rem;
+  line-height: 1.7;
+
+  @include respond(phone) {
+    width: 80%;
+    line-height: 1.6;
+    margin-bottom: 7.2rem;
+  }
+}
+.split {
+  display: flex;
+  margin-bottom: 14rem;
+
+  @include respond(phone) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.left {
+  margin-left: -4rem;
+  flex: 51%;
+  @include respond(phone) {
+    margin: 0 auto;
+    width: 86%;
+    flex: none;
+    margin-bottom: 5.4rem;
+  }
+}
+
+.right {
+  flex: 49%;
+
+  @include respond(phone) {
+    margin-bottom: 20rem;
+  }
+}
+
+.right-container {
+  margin-top: 6rem;
+  margin-left: -9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-less {
+  margin-bottom: 10rem;
+  @include respond(phone) {
+    margin-bottom: 4rem;
+  }
+}
+
+.margin-more {
+  margin-bottom: 7rem;
+  @include respond(phone) {
+    margin-bottom: 9rem;
+  }
+}
+
+.benefit-block {
+  width: 50%;
+
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+    @include respond(phone) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  @include respond(phone) {
+    width: 80%;
+  }
+}
+
+.benefit-block h2 {
+  font-size: 2.4rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.benefit-block p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.image-device-container {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  @include respond(phone) {
+    margin-bottom: 10.5rem;
+  }
+}
+
+.image-device {
+  width: 65%;
+
+  @include respond(phone) {
+    width: 90%;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+
+  @include respond(phone) {
+    display: block;
+    margin-bottom: 14rem;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  padding: 0 20px;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 5.5rem;
+  }
+  &:last-child .box-image {
+    height: 4rem;
+    width: 5.2rem;
+  }
+}
+.box-image {
+  width: 4.5rem;
+  margin-bottom: 4rem;
+
+  @include respond(phone) {
+    width: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+
+  @include respond(phone) {
+    font-size: 2.6rem;
+  }
+}
+
+.access {
+  margin-bottom: 2rem;
+}
+.box p {
+  width: 80%;
+  line-height: 1.7;
+  text-align: center;
+
+  @include respond(phone) {
+    width: 86%;
+    line-height: 1.7;
+  }
+}
+
+.company-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 16rem;
+  width: 80%;
+  @include respond(phone) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.company-box {
+  @include respond(phone) {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 7rem;
+
+    &:nth-child(2) {
+      width: 38%;
+    }
+    &:nth-child(4) {
+      width: 38%;
+    }
+    &:nth-child(5) {
+      width: 38%;
+    }
+  }
+}
+
+// .company {
+//   width: 15rem;
+//   height: 4rem;
+// }
+.bottom-action {
+  margin-bottom: -1.5rem;
+}
+.extra-margin {
+  @include respond(phone) {
+    margin-bottom: 15rem;
+  }
+}
+
+.less-margin-2 {
+  margin-bottom: 6rem;
+}
+.footer-container {
+  background-color: rgb(248, 247, 247);
+  padding: 6rem 4rem;
+}
+.footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer-logo {
+  width: 6rem;
+  height: 6rem;
+
+  @include respond(phone) {
+    width: 6rem;
+    margin-bottom: 4.4rem;
+  }
+}
+
+.footer-item {
+  margin-bottom: 2rem;
+  list-style: none;
+  color: $darkGrayishBlue;
+  @include respond(phone) {
+    font-size: 2.1rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.social {
+  margin-top: 6rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  @include respond(phone) {
+    display: none;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+ion-icon {
+  font-size: 35px;
+  color: $darkGrayishBlue;
+  margin-left: 1.5rem;
+
+  &:not(:last-of-type) {
+    margin-left: 1.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 30px;
+  }
 }
