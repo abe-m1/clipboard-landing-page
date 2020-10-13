@@ -77,9 +77,7 @@ p {
   align-items: center;
   background: url(/images/bg-header-desktop.png) no-repeat top center;
   background-size: fit;
-  // @include respond(phone) {
-  //   width: 100%;
-  // }
+
   @include respond(phone) {
     background: url(/images/bg-header-mobile.png) no-repeat top center;
   }
@@ -191,6 +189,7 @@ p {
     margin-bottom: 7.2rem;
   }
 }
+
 .split {
   display: flex;
   margin-bottom: 14rem;
@@ -388,10 +387,6 @@ p {
   }
 }
 
-// .company {
-//   width: 15rem;
-//   height: 4rem;
-// }
 .bottom-action {
   margin-bottom: -1.5rem;
 }
